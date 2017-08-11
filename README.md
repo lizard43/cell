@@ -1,72 +1,85 @@
 # cell
 Python 2.7 code to interface a cheap 2G SIM800L to a cheap Raspberry Pi Zero W v1.1
 
-# Parts
+![SIM800L](https://github.com/lizard43/cell/blob/master/images/SIM800L.jpg)
 
-Got the Pi Zero W here for $10 in-store pickup only: http://microcenter.com/product/475267/Zero_W
+![Pi Zero W](https://github.com/lizard43/cell/blob/master/images/raspberry-pizero.png)
 
-Got the SIM800L here for about $5 w/ free shipping:
+## License
+- MIT
 
-Got a free 1M/month SIM card here: https://hologram.io/devplan
+## Parts
 
-# OS
+- Get a Raspberry Pi Zero W at [Micro Center](http://microcenter.com/product/475267/Zero_W) for $10 in-store pickup.
 
-Using Raspbian Jessie version 2017-0705 found at https://www.raspberrypi.org/downloads/raspbian
+- Get a SIM800L on [eBay](http://ebay.com) for about $5 w/ free shipping:
 
-After flashing the Raspbian to an SD card, edit the /boot/command.txt and /boot/cmdline.txt files to enable the UART on the Pi Zero's pins 14 and 16. Look at my files here in the repo to see the edits I made.
+- Get a free 1M/month SIM card from [hologram](https://hologram.io/devplan)
 
-# Connections
+## OS
 
-Hook up the Pi Zero to the SIM800 with a few wires:
+- Using Raspbian Jessie version 2017-0705 found at [Raspberry Pi Downloads](https://www.raspberrypi.org/downloads/raspbian)
 
-Insert your SIM card into the SIM800
+- After flashing the Raspbian to an SD card
+	- Edit the /boot/command.txt and /boot/cmdline.txt files to enable the UART on the Pi Zero's pins 14 and 16
+	- Look at my files here in the repo to see the edits I made
 
-# Check It Out
+## Connections
 
-Install picocom to test connectivity
+- Hook up the Pi Zero to the SIM800 with a few wires:
+
+- Insert your SIM card into the SIM800
+
+## Check It Out
+
+- Install picocom to test connectivity
 	sudo apt-get install picocom
 
-Start picocom
+- Start picocom
 	picocom --baud 9600 /dev/ttyAMA0
 
-See if SIM800 is alive with the 'AT' command. The SIM800 should respond with 'OK'
+- See if SIM800 is alive with the 'AT' command. The SIM800 should respond with 'OK'
 
-Read the SIM800 reference files in the repo's doc folder for many commands
+- Read the SIM800 reference files in the repo's doc folder for many commands
 
-# Running with the Python Code
+## Running with the Python Code
 
-The version of Raspbian I used comes with Python 2.7.9 so that's the version I have targeted with this code.
+- The version of Raspbian I used comes with Python 2.7.9 so that's the version I have targeted with this code.
 
-I don't 'know' Python so I learned some as I cobbled this code together. It ain't pretty and I stole lots from others. But it ~works and it's free.
+- I don't 'know' Python so I learned some as I cobbled this code together. It ain't pretty and I stole lots from others. But it ~works for my purposes and it's free
 
-Install psSerial (this installed v3.4 for me):
-	sudo pip install pySerial
+- Install psSerial (this installed v3.4 for me)
+	- sudo pip install pySerial
 
-pySerial has decent docs located at: http://pyserial.readthedocs.io/en/latest/shortintro.html
+	- pySerial has [decent docs](http://pyserial.readthedocs.io/en/latest/shortintro.html)
 
-Install Pmw (this installed v2.01):
-	sudo pip install Pmw
+- Install Pmw (this installed v2.01)
+	- sudo pip install Pmw
 
-Pmw is a toolkit for building a UI in Python using the Tkinter module. You can find docs at: http://pmw.sourceforge.net/docs
-But the more recent v2 docs seem to be only provided in the tar.gz that you can download here: https://sourceforge.net/projects/pmw/files/Pmw2
+	- Pmw is a toolkit for building a UI in Python using the Tkinter module. You can find docs at the [Pmw Site](http://pmw.sourceforge.net/docs)
+		- But the more recent v2 docs seem to be only provided in the tar.gz that you can download [here(https://sourceforge.net/projects/pmw/files/Pmw2)
 
-Run the cobbled code:
-	python cellComms.py
+- Run the cobbled code:
+	- python cellComms.py
 
-Open the serial port with the Open button
+- Open the serial port with the Open button
 
-Send an 'AT' command with the AT button
+- Send an 'AT' command with the AT button
 
-Get the SIM card IMEI with the IMEI button. This sends an 'AT+GSN'
+- Get the SIM card IMEI with the IMEI button
+	- This sends an 'AT+GSN'
 
-Get the SIM800 module version with the SIM800 button. This sends an 'AT+CGMR'
+- Get the SIM800 module version with the SIM800 button
+	- This sends an 'AT+CGMR'
 
-Get the signal strength in bars with Bars button. This sends an 'AT+CSQ'
+- Get the signal strength in bars with Bars button
+	- This sends an 'AT+CSQ'
 
-Set the APN with the APN button. I've hard coded my APN to hologram since that's the SIM card I'm using. Edit the APN constant in the code to change to whatever you're using. This button sends an 'AT+CSST=hologram'
+- Set the APN with the APN button
+	- This button sends an 'AT+CSST=hologram'
+		- I've hard coded my APN to hologram since that's the SIM card I'm using
+		- Edit the APN constant in the code to change to whatever you're using
 
-Get the Network status with the Net button. This sends an 'AT+CREG'
-
-
-
+- Get the Network status with the Net button
+	- This sends an 'AT+CREG'
 
