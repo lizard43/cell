@@ -3,7 +3,7 @@
 # cell
 Python 2.7 code to interface a cheap 2G SIM800L to a cheap Raspberry Pi Zero W v1.1
 
-| <img src="https://github.com/lizard43/cell/blob/master/images/SIM800L.jpg" width="200" /> | <img src="https://github.com/lizard43/cell/blob/master/images/raspberry-pizero.png" width="200" /> |
+| <a link="https://www.ebay.com/sch/i.html?_nkw=sim800+gprs+gsm+module+board+l+shape"><img src="https://github.com/lizard43/cell/blob/master/images/SIM800L.jpg" width="200" /></a> | <a link="http://microcenter.com/product/475267/Zero_W"><img src="https://github.com/lizard43/cell/blob/master/images/raspberry-pizero.png" width="200" /></a> |
 |-|-|
 
 ## License
@@ -13,7 +13,7 @@ Python 2.7 code to interface a cheap 2G SIM800L to a cheap Raspberry Pi Zero W v
 
 - Get a Raspberry Pi Zero W at [Micro Center](http://microcenter.com/product/475267/Zero_W) for $10 in-store pickup.
 
-- Get a SIM800L on [eBay](http://ebay.com) for about $5 w/ free shipping:
+- Get a SIM800L on [eBay](https://www.ebay.com/sch/i.html?_nkw=sim800+gprs+gsm+module+board+l+shape) for about $5 w/ free shipping:
 
 - Get a free 1M/month SIM card from [hologram](https://hologram.io/devplan)
 
