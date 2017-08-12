@@ -3,9 +3,9 @@
 # cell
 Python 2.7 code to interface a cheap 2G SIM800L to a cheap Raspberry Pi Zero W v1.1
 
-![image alt <](https://github.com/lizard43/cell/blob/master/images/SIM800L.jpg)
+![image alt <](https://github.com/lizard43/cell/blob/master/images/SIM800L.jpg){: style="float:left"}
 
-![image alt >](https://github.com/lizard43/cell/blob/master/images/raspberry-pizero.png)
+![image alt >](https://github.com/lizard43/cell/blob/master/images/raspberry-pizero.png){: style="float:right"}
 
 ## License
 - MIT
