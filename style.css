@@ -1,0 +1,17 @@
+img[alt$=">"] {
+  float:right;
+  width: 300px;
+}
+
+img[alt$="<"] {
+  float:left;
+  width: 300px;
+}
+
+img[alt$="<>"] {
+    display: block;
+    max-width: 100%;
+    height: auto;
+    margin: auto;
+    float: none!important;
+}
