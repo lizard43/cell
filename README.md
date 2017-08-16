@@ -13,7 +13,7 @@ Python 2.7 code to interface a cheap 2G SIM800L to a cheap Raspberry Pi Zero W v
 
 - Get a Raspberry Pi Zero W at [Micro Center](http://microcenter.com/product/475267/Zero_W) for $10 in-store pickup.
 
-- Get a SIM800L on [eBay](https://www.ebay.com/sch/i.html?_nkw=sim800+gprs+gsm+module+board+l+shape) for about $5 w/ free shipping:
+- Get a SIM800L on [eBay](https://www.ebay.com/sch/i.html?_nkw=sim800+gprs+gsm+module+board+l+shape) for about $10 w/ free shipping:
 
 - Get a free 1M/month SIM card from [hologram](https://hologram.io/devplan)
 
@@ -22,12 +22,19 @@ Python 2.7 code to interface a cheap 2G SIM800L to a cheap Raspberry Pi Zero W v
 - Using Raspbian Jessie version 2017-0705 found at [Raspberry Pi Downloads](https://www.raspberrypi.org/downloads/raspbian)
 
 - After flashing the Raspbian to an SD card
-	- Edit the /boot/command.txt and /boot/cmdline.txt files to enable the UART on the Pi Zero's pins 14 and 16
+	- Edit the /boot/command.txt and /boot/cmdline.txt files to enable the UART on the Pi Zero's GP14 (TX) and GP15 (RX)
 	- Look at my files here in the repo to see the edits I made
+
+## Activate
+- If you're using the free hologram.io SIM card (and if not, why not?), [activate](https://dashboard.hologram.io/activate) the SIM and choose the Developer Data Plan
 
 ## Connections
 
-- Hook up the Pi Zero to the SIM800 with a few wires:
+- Hook up the SIM800 to the Pi Zero with a few wires:
+
+| <img src="https://github.com/lizard43/cell/blob/master/images/SIM800L.sides.jpg" width="200" /> |  <img src="https://github.com/lizard43/cell/blob/master/images/pizero-small.jpg" width="200" />  |
+|-|-|
+
 
 - Insert your SIM card into the SIM800
 
