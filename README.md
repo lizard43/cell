@@ -32,7 +32,7 @@ Python 2.7 code to interface a cheap 2G SIM800L to a cheap Raspberry Pi Zero W v
 
 - Hook up the SIM800 to the Pi Zero with a few wires:
 
-| <img src="https://github.com/lizard43/cell/blob/master/images/SIM800L.sides.jpg" width="200" /> |  <img src="https://github.com/lizard43/cell/blob/master/images/pizero-small.jpg" width="200" />  |
+| <img src="https://github.com/lizard43/cell/blob/master/images/SIM800L.sides.jpg" width="200" /> |  <img src="https://github.com/lizard43/cell/blob/master/images/Raspberry-Pi-GPIO-Layout-Revision-2.png" width="200" />  |
 |-|-|
 
 
