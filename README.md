@@ -35,6 +35,16 @@ Python 2.7 code to interface a cheap 2G SIM800L to a cheap Raspberry Pi Zero W v
 | <img src="https://github.com/lizard43/cell/blob/master/images/SIM800L.sides.jpg" width="450" /> |  <img src="https://github.com/lizard43/cell/blob/master/images/Raspberry-Pi-GPIO.2.png" width="800" />  |
 |-|-|
 
+| SIM800 Pin | Pi Zero Pin |
+| --- | --- |
+| 5V | Pin 2 - 5V |
+| GND | Pin 6 - GND |
+| VDD | Pin 4 - 5V |
+| TX | Pin 10 - GPIO15 - RX |
+| RX | Pin 8 - GPIO14 - TX |
+| GND | Pin 14 - GND |
+| RST | Pin - |
+|-|-|
 
 - Insert your SIM card into the SIM800
 
