@@ -44,7 +44,6 @@ Python 2.7 code to interface a cheap 2G SIM800L to a cheap Raspberry Pi Zero W v
 | RX | Pin 8 - GPIO14 - TX |
 | GND | Pin 14 - GND |
 | RST | Pin - |
-|-|-|
 
 - Insert your SIM card into the SIM800
 
@@ -63,8 +62,6 @@ Python 2.7 code to interface a cheap 2G SIM800L to a cheap Raspberry Pi Zero W v
 ## Running with the Python Code
 
 - The version of Raspbian I used comes with Python 2.7.9 so that's the version I have targeted with this code.
-
-- I don't 'know' Python so I learned some as I cobbled this code together. It ain't pretty and I stole lots from others. But it ~works for my purposes and it's free
 
 - Install psSerial (this installed v3.4 for me)
 	- sudo pip install pySerial
@@ -101,3 +98,15 @@ Python 2.7 code to interface a cheap 2G SIM800L to a cheap Raspberry Pi Zero W v
 - Get the Network status with the Net button
 	- This sends an 'AT+CREG'
 
+
+## LILYGO T-SIM7000G
+
+LILYGO® TTGO T-SIM7000G SIM Development Board ESP32 Wireless Module WiFi Bluetooth GPS Antenna Support Expansion Solar Charge
+
+[Random Nerd - Getting Started with LILYGO T-SIM7000G ESP32 (LTE, GPRS, and GPS)](https://randomnerdtutorials.com/lilygo-t-sim7000g-esp32-lte-gprs-gps)
+
+[Buy at AliExpress](https://www.aliexpress.com/item/2255800356373344.html)
+
+<img src="https://github.com/lizard43/cell/blob/master/images/SIM7000G/LilyGO T-SIM7000G.jpg" width="450" />
+
+<img src="https://github.com/lizard43/cell/blob/master/images/SIM7000G/LilyGO T-SIM7000G V1.1.jpg" width="450" />
