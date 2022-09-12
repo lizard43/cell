@@ -109,4 +109,4 @@ LILYGO® TTGO T-SIM7000G SIM Development Board ESP32 Wireless Module WiFi Blueto
 
 <img src="https://github.com/lizard43/cell/blob/master/images/%20SIM7000G/LilyGO%20T-SIM7000G.jpg" width="450" />
 
-<img src="https://github.com/lizard43/cell/blob/master/images/SIM7000G/LilyGO%20T-SIM7000G%20V1.1.jpg" width="450" />
+<img src="https://github.com/lizard43/cell/blob/master/images/%20SIM7000G/LilyGO%20T-SIM7000G%20V1.1.jpg" width="450" />
